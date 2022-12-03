@@ -4,15 +4,13 @@ import NewItemForm from "./NewItemForm";
 
 function Header() {
   return (
+    <>
     <header>
       <h1>
-        <span className="logo" role="img">
-          ☮
-        </span>
-        gregslist
+        Virtual Closet
       </h1>
-      <NewItemForm />
     </header>
+    </>
   );
 }
 
