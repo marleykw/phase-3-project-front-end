@@ -1,24 +1,22 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 //import {TASKS, CATEGORIES} from "../data";
 import Item from "./Item";
 
 
-//console.log(TASKS)
-//console.log(CATEGORIES)
+function ItemList() {
+  const [items, setItems] = useState([]);
 
-function ItemList({task}) {
-  //console.log({isInList})
-  //const tasksToDisplay = task.filter(({task}) =>{
-   // if (selectedCategory === "All") return true;
+  useEffect(() => {
+    fetch("http://localhost:3000/items")
+    .then((r)=>r.json())
+    .then((data) => setItems(data))
+  }, [])
 
-    //return item.category === selectedCategory;
-    //return true;
-  //});
   return (
-    <div className="tasks">
+    <div className="itemList">
       <ul className="Items">
-        {task.map((task) => (
-          <Item key={task.text} name={task.text} category={task.category} />
+        {items.map((item) => ( 
+          <Item key={item.id} name={item.name} image={item.image} />
         ))}
       </ul>
     </div>
