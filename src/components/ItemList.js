@@ -1,24 +1,12 @@
-import {React, useState, useEffect} from "react";
-//import {TASKS, CATEGORIES} from "../data";
+import React from "react";
 import Item from "./Item";
 
 
-function ItemList() {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/items")
-    .then((r)=>r.json())
-    .then((data) => setItems(data))
-  }, [])
-
+function ItemList({items, handleDeleteItem}) {
+  const itemsToRender = items.map((item)=> <Item key={item.id} item={item} handleDeleteItem={handleDeleteItem} />)
   return (
     <div className="itemList">
-      <ul className="Items">
-        {items.map((item) => ( 
-          <Item key={item.id} name={item.name} image={item.image} />
-        ))}
-      </ul>
+      <ul className="Items">{itemsToRender}</ul>
     </div>
   );
 }

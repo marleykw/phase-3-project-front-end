@@ -1,6 +1,4 @@
 import React from "react";
-import NewItemForm from "./NewItemForm";
-
 
 function Header() {
   return (

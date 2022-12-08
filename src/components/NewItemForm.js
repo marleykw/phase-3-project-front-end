@@ -1,33 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 
-function NewItemForm() {
-  function handleSubmit(e) {
+function NewItemForm({handleAddItem}) {
+  const initialFormData = {
+    name: "",
+    image: ""
+  }
+  const [formData, setFormData] = useState(initialFormData)
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]:e.target.value
+    })
+    console.log(formData)
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
-    /*console.log(e)
-    const itemData = {
-      name: "",
-      image: "",
-      price: null
-    }; 
+
+    const newItem = {
+      ...formData
+    }
+
     fetch("http://localhost:3000/items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-      },
-      body: JSON.stringify(itemData),
+        },
+        body: JSON.stringify(newItem),
     })
-      .then((r) => r.json())
-      .then((newItem) => console.log(newItem));
-      */
-  }
+        .then((r) => r.json())
+        .then((item) => handleAddItem(item))
+  };
+
   return (
     <div className="new-item-form">
       <h2>Add to Closet</h2>
-      <form>
-        <input type="text" name="name" placeholder="New Item Name" />
-        <input type="text" name="image" placeholder="Image URL" />
-        <button type="submit" onSubmit={handleSubmit}>Add New Item</button>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" placeholder="New Item Name" value={formData.name} onChange={handleChange}/>
+        <input type="text" name="image" placeholder="Image URL" value={formData.image} onChange={handleChange}/>
+        <button type="submit">Add New Item</button>
       </form>
     </div>
   );
