@@ -9,8 +9,7 @@ import NavBar from "./NavBar";
 function App() {
   const [items, setItems] = useState([]);
 
-  const [page, setPage] = useState("/")
-
+ 
   function handleAddItem(item) {
     setItems([...items, item])
   }
@@ -32,7 +31,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:3000/items")
+    fetch(`http://localhost:3000/items`)
     .then((r)=>r.json())
     .then((data) => setItems(data))
   }, [])
@@ -41,7 +40,7 @@ function App() {
   return (
     <>
     <Header />
-    <NavBar onChangePage={setPage}/>
+    <NavBar />
     <Switch>
       <Route path="/Form">
         <NewItemForm handleAddItem={handleAddItem}/>
