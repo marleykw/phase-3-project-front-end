@@ -21,7 +21,7 @@ Phase 2 Project - Virtual Closet App
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">Usage</a></li>
   </ol>
 </details>
 
@@ -78,18 +78,18 @@ Make sure you have the latest version of npm installed.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+The Virtual Closet App lets you maintain a visual library of the items you have in your closet. To add an item, use the form at the top by filling out the item name, image link, and click submit. <img width="959" alt="Screen Shot 2022-12-14 at 1 36 53 PM" src="https://user-images.githubusercontent.com/105661534/207685288-e7d8ce61-dd03-4246-8593-f41789865930.png">
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Items added will then get posted to a db.json through a POST request. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Any items that no longer serve you can be donated to charity by using the Donate button. This will delete the item from the db.json using a DELETE request. <img width="288" alt="Screen Shot 2022-12-14 at 1 49 04 PM" src="https://user-images.githubusercontent.com/105661534/207685931-1260dce7-a0cf-40c9-88df-445f55fb60c8.png">
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/marleykw/phase-2-project](https://github.com/marleykw/phase-2-project)
 
