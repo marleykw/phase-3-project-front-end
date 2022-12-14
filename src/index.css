@@ -1,3 +1,4 @@
+
 :root {
   --green: rgb(39, 189, 39);
 }
@@ -101,6 +102,31 @@ input:focus {
   list-style: none;
 }
 
+nav {
+  background-color: rgba(220, 213, 227, 0.5);
+}
+
+nav a {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  border-bottom: 2px solid black;
+  transition: 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+
+nav a.active {
+  background-color: darkgrey;
+  color: white;
+}
+
 .card {
   margin: 1rem;
 }
@@ -135,4 +161,5 @@ input:focus {
     width: calc(20% - 2rem);
   }
 }
+
 

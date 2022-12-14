@@ -1,10 +1,15 @@
+
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import ItemList from "./ItemList";
 import NewItemForm from "./NewItemForm";
+import { Switch, Route } from 'react-router-dom';
+import NavBar from "./NavBar";
 
 function App() {
   const [items, setItems] = useState([]);
+
+  const [page, setPage] = useState("/")
 
   function handleAddItem(item) {
     setItems([...items, item])
@@ -35,10 +40,26 @@ function App() {
 
   return (
     <>
-      <Header />
-      <NewItemForm handleAddItem={handleAddItem}/>
-      <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+    <Header />
+    <NavBar onChangePage={setPage}/>
+    <Switch>
+      <Route path="/Form">
+        <NewItemForm handleAddItem={handleAddItem}/>
+        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+      </Route>
+      <Route path="/Closet">
+        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+      </Route>
+      <Route path="/Home">
+        <NewItemForm handleAddItem={handleAddItem}/>
+        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+      </Route>
+      <Route path="*">
+        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+      </Route>
+    </Switch>
     </>
+
   )
 }
 

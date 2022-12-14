@@ -1,4 +1,5 @@
 import React from "react";
+
 function Item(props) {
 const {image, name, id} = props.item
 return (
