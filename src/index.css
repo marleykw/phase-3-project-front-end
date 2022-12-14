@@ -24,7 +24,7 @@ button {
 }
 
 button.primary {
-  background-color: var(--green);
+  background-color: var(--pink);
   color: white;
 }
 
@@ -37,37 +37,37 @@ header h1 {
   font-size: 2.5em;
   font-weight: 900;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0;
 }
 
 .logo {
   font-size: 1.25em;
   padding-left: 0.5rem;
   color: transparent;
-  text-shadow: 0 0 0 var(--green);
+  text-shadow: 0 0 0 var(--pink);
 }
 
 main {
   padding: 0 1rem;
 }
 
-.new-plant-form {
+.new-item-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
+  background-color: rgba(220, 213, 227, 0.5);
 }
 
-.new-plant-form form {
+.new-item-form form {
   display: flex;
   justify-content: center;
 }
 
-.new-plant-form input {
+.new-item-form input {
   margin-right: 2rem;
   flex: 1;
 }
 
-.new-plant-form button {
+.new-item-form button {
   width: 150px;
 }
 
@@ -94,7 +94,7 @@ input {
 
 input:focus {
   outline: none;
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid var(--pink);
 }
 
 .cards {
@@ -135,3 +135,4 @@ input:focus {
     width: calc(20% - 2rem);
   }
 }
+

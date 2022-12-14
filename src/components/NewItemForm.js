@@ -12,7 +12,6 @@ function NewItemForm({handleAddItem}) {
       ...formData,
       [e.target.name]:e.target.value
     })
-    console.log(formData)
   };
 
   const handleSubmit = (e) => {
@@ -31,6 +30,8 @@ function NewItemForm({handleAddItem}) {
     })
         .then((r) => r.json())
         .then((item) => handleAddItem(item))
+
+        setFormData(initialFormData)
   };
 
   return (
