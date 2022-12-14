@@ -29,7 +29,8 @@ Phase 2 Project - Virtual Closet App
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img width="959" alt="Screen Shot 2022-12-14 at 1 36 53 PM" src="https://user-images.githubusercontent.com/105661534/207682504-874e2b9f-a31f-4cf6-95b8-6c286b6f8dd2.png">
+
+<img width="1285" alt="Screen Shot 2022-12-14 at 3 47 33 PM" src="https://user-images.githubusercontent.com/105661534/207712553-c868239d-dcda-484e-a220-5b2889dfbb7b.png">
 
 Welcome to the Virtual Closet App--an easy way to keep track of what is in your closet. With this app, spring cleaning is a breeze and you'll never have to say "I have nothing to wear!" again. 
 
