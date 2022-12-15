@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "lululemon Ribbed Leggings",
+      "image": "https://images.lululemon.com/is/image/lululemon/LW5FJTS_0001_1?wid=1800&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72",
+      "price": "118",
+      "date": "2022-12-01"
+    },
+    {
+      "id": 2,
+      "name": "All Saints Liner Jacket",
+      "image": "https://www.allsaints.com/dw/image/v2/BHHD_PRD/on/demandware.static/-/Sites-allsaints-us-master-catalog/default/dwe970423e/images/large/WO098X/750/WO098X-750-2.jpg?sw=3000&sh=3000&sm=fit&q=70",
+      "price": "118",
+      "date": "2022-12-01"
+    },
+    {
+      "id": 3,
+      "name": "Badtz-Maru Sweater",
+      "image": "./images/badzMaruSweater.jpg",
+      "price": "399",
+      "date": "2022-12-01"
+    },
+    {
+      "name": "Bear Hat",
+      "image": "https://img.ltwebstatic.com/images3_pi/2022/09/13/1663032663fd796699613af5e38a76fecc614b75b8_thumbnail_900x.webp",
+      "id": 4,
+      "price": "12.99",
+      "date": "2022-12-01"
+    },
+    {
+      "name": "GUCCI Slides",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1506535204/408508_KU200_8919_002_090_0000_Light-GG-Blooms-Supreme-floral-slide-sandal.jpg",
+      "id": 5,
+      "price": "450",
+      "date": "2022-12-01"
+    },
+    {
+      "name": "Essentials Black Hoodie",
+      "image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwf7d2bdb2/product_images/0785250500397NEW_00_454.jpg?sw=2000",
+      "id": 6,
+      "price": "80",
+      "date": "2022-12-01"
+    },
+    {
+      "name": "lululemon Soft Ribbed Flare Pants",
+      "image": "https://images.lululemon.com/is/image/lululemon/LW5EUBS_047748_1?wid=1440&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72",
+      "price": "148.00",
+      "date": "2022-12-01",
+      "id": 7
+    }
+  ]
+}
