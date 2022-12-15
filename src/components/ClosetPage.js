@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 
 function ClosetPage({items, handleDeleteItem}) {
 return (
-    <div>
+    <div className="main-section">
     <ItemList handleDeleteItem={handleDeleteItem} items={items} />
     </div>
 )

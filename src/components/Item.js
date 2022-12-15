@@ -6,8 +6,9 @@ const {image, name, id} = props.item
 return (
   <div className="card">
     <img src={image} alt={name} />
-    <h4>{name}</h4>
-    <Link to={`/Closet/${id}`}>View Item</Link>
+    <h4>
+      <Link to={`/Closet/${id}`}>{name}</Link>
+    </h4>
     <button type="delete" onClick={()=>props.handleDeleteItem(props.item)}>Donate</button>
   </div>
   );

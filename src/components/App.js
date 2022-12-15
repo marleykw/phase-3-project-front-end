@@ -54,9 +54,7 @@ function App() {
       <Route exact path="/Closet/:id">
         <ItemDetailPage />
       </Route>
-
       <Route path="/">
-        <NewItemForm handleAddItem={handleAddItem}/>
         <ClosetPage handleDeleteItem={handleDeleteItem} items={items} />
       </Route>
     </Switch>

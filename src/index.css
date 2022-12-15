@@ -1,7 +1,8 @@
-
 :root {
-  --green: rgb(39, 189, 39);
-}
+    --cardWidth: 240px;
+    --cardHeight: 280px;
+    --cardMargin: 16px;
+  }
 
 * {
   margin: 0;
@@ -18,6 +19,13 @@ h2 {
 }
 
 button {
+  padding: 0.25rem 1rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+link {
   padding: 0.25rem 1rem;
   font-family: inherit;
   border: none;
@@ -49,7 +57,23 @@ header h1 {
 }
 
 main {
-  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: whitesmoke;
+}
+
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: whitesmoke;
+}
+.itemList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: whitesmoke;
 }
 
 .new-item-form {
@@ -139,27 +163,18 @@ nav a.active {
   margin-top: 0.5rem;
 }
 
+
 @media (min-width: 768px) {
   .cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: whitesmoke;
   }
 
   .card {
     width: calc(33% - 2rem);
+    justify-content: center;
   }
 }
-
-@media (min-width: 1024px) {
-  .card {
-    width: calc(25% - 2rem);
-  }
-}
-
-@media (min-width: 1200px) {
-  .card {
-    width: calc(20% - 2rem);
-  }
-}
-
 
