@@ -4,7 +4,9 @@ import React, {useState} from "react";
 function NewItemForm({handleAddItem}) {
   const initialFormData = {
     name: "",
-    image: ""
+    image: "",
+    price: "",
+    date: ""
   }
   const [formData, setFormData] = useState(initialFormData)
 
@@ -41,6 +43,8 @@ function NewItemForm({handleAddItem}) {
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="New Item Name" value={formData.name} onChange={handleChange}/>
         <input type="text" name="image" placeholder="Image URL" value={formData.image} onChange={handleChange}/>
+        <input type="number" name="price" placeholder="Price" value={formData.price} onChange={handleChange}/>
+        <input type="date" name="date" placeholder="Purchase Date" value={formData.date} onChange={handleChange}/>
         <button type="submit">Add New Item</button>
       </form>
     </div>

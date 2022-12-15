@@ -1,13 +1,15 @@
 
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
-import ItemList from "./ItemList";
 import NewItemForm from "./NewItemForm";
 import { Switch, Route } from 'react-router-dom';
 import NavBar from "./NavBar";
+import ClosetPage from "./ClosetPage";
+import ItemDetailPage from "./ItemDetailPage";
 
 function App() {
   const [items, setItems] = useState([]);
+ 
 
  
   function handleAddItem(item) {
@@ -30,6 +32,7 @@ function App() {
     });
   }
 
+
   useEffect(() => {
     fetch(`http://localhost:3000/items`)
     .then((r)=>r.json())
@@ -44,17 +47,17 @@ function App() {
     <Switch>
       <Route path="/Form">
         <NewItemForm handleAddItem={handleAddItem}/>
-        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
       </Route>
-      <Route path="/Closet">
-        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+      <Route exact path="/Closet">
+        <ClosetPage handleDeleteItem={handleDeleteItem} items={items} />
       </Route>
-      <Route path="/Home">
+      <Route exact path="/Closet/:id">
+        <ItemDetailPage />
+      </Route>
+
+      <Route path="/">
         <NewItemForm handleAddItem={handleAddItem}/>
-        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
-      </Route>
-      <Route path="*">
-        <ItemList handleDeleteItem={handleDeleteItem} items={items} />
+        <ClosetPage handleDeleteItem={handleDeleteItem} items={items} />
       </Route>
     </Switch>
     </>
