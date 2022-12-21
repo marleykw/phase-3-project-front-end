@@ -79,16 +79,11 @@ Make sure you have the latest version of npm installed.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-The Virtual Closet App lets you maintain a visual library of the items you have in your closet. To add an item, use the form at the top by filling out the item name, image link, and click submit. 
-
-<img width="959" alt="Screen Shot 2022-12-14 at 1 36 53 PM" src="https://user-images.githubusercontent.com/105661534/207685288-e7d8ce61-dd03-4246-8593-f41789865930.png">
-
-Items added will then get posted to a db.json through a POST request. 
+The Virtual Closet App lets you maintain a visual library of the items you have in your closet. To add an item, use the navigation bar at the top to open up a form and by filling out the item name, image link, as well as additional information and clicking submit. Items added will then get posted to a db.json through a POST request. 
 
 Any items that no longer serve you can be donated to charity by using the Donate button. This will delete the item from the db.json using a DELETE request. 
 
-<img width="288" alt="Screen Shot 2022-12-14 at 1 49 04 PM" src="https://user-images.githubusercontent.com/105661534/207685931-1260dce7-a0cf-40c9-88df-445f55fb60c8.png">
-
+You can drill down into information about each of the items by clicking their names. This will direct you to a page with the item detail like the price as well as the purchase date. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
