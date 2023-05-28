@@ -1,5 +1,5 @@
 # Virtual Closet App
-Phase 2 Project - Virtual Closet App
+Phase 3 Project - Virtual Closet App Front End
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
@@ -79,11 +79,13 @@ Make sure you have the latest version of npm installed.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-The Virtual Closet App lets you maintain a visual library of the items you have in your closet. To add an item, use the navigation bar at the top to open up a form and by filling out the item name, image link, as well as additional information and clicking submit. Items added will then get posted to a db.json through a POST request. 
+The Virtual Closet App lets you maintain a visual library of the items you have in your closet. To add an item, use the navigation bar at the top to open up a form and by filling out the item name, image link, as well as additional information and clicking submit. Items added will then get posted to a my backend through a POST request. 
 
 Any items that no longer serve you can be donated to charity by using the Donate button. This will delete the item from the db.json using a DELETE request. 
 
-You can drill down into information about each of the items by clicking their names. This will direct you to a page with the item detail like the price as well as the purchase date. 
+You can drill down into information about each of the items by clicking their names. This will direct you to a page with the item detail like the price as well as the purchase date. In additiion, there are now comments that allow you to keep track of feelings about the article of clothing. 
+
+You can add or delete comments that will be tagged with a timestamp. Finally, there is the ability to update when you last wore the item. This will help you determine if something isn't getting enough use and should be donated anyways. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +93,7 @@ You can drill down into information about each of the items by clicking their na
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/marleykw/phase-2-project](https://github.com/marleykw/phase-2-project)
+Project Link: [https://github.com/marleykw/phase-3-project-front-end](https://github.com/marleykw/phase-3-project-front-end)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
