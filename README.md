@@ -60,15 +60,27 @@ Make sure you have the latest version of npm installed.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo for the front end
    ```sh
-   git clone https://github.com/marleykw/phase-2-project.git
+   git clone https://github.com/marleykw/phase-3-project-front-end
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-3. Run the server
+3. Clone the repo for the back end 
+  ```sh
+   https://github.com/marleykw/phase-3-sinatra-react-project
+   ```
+4. Install gems
+  ```sh
+    bundle install
+  ```
+5. Start backend server
+  ```sh
+    bundle exec rake server
+  ```
+6. Run the frontend server
    ```sh
    npm run start
    ```
