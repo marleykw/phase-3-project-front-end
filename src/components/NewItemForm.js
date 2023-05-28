@@ -23,8 +23,8 @@ function NewItemForm({handleAddItem}) {
     const newItem = {
       ...formData
     }
-
-    fetch("http://localhost:3000/items", {
+    console.log(newItem)
+    fetch("http://localhost:9292/closet", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

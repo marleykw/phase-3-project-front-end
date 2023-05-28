@@ -16,13 +16,14 @@ function App() {
     setItems([...items, item])
   }
 
+
  function handleRemoveItem(id){
     const updatedItemList = items.filter((item)=> item.id !== id);
     setItems(updatedItemList);
   }
 
   function handleDeleteItem(item) {
-    fetch(`http://localhost:3000/items/${item.id}`, {
+    fetch(`http://localhost:9292/closet/${item.id}`, {
       method: "DELETE",
     })
     .then((r)=> {
@@ -34,11 +35,10 @@ function App() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:3000/items`)
+    fetch(`http://localhost:9292/closet`)
     .then((r)=>r.json())
     .then((data) => setItems(data))
   }, [])
-
 
   return (
     <>

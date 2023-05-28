@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Item(props) {
-const {image, name, id} = props.item
+const {url, name, id} = props.item
 return (
   <div className="card">
-    <img src={image} alt={name} />
+    <img src={url} alt={name} />
     <h4>
       <Link to={`/Closet/${id}`}>{name}</Link>
     </h4>
